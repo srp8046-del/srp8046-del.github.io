@@ -120,18 +120,17 @@ footer{background:var(--navy);color:#cbd5e1;text-align:center;padding:32px 20px}
 
   <div class="profile-card">
    <div class="photo-wrap">
+    <img src="profile.jpg" class="profile-photo" alt="Sheshram Prajapati profile photo"
+         onerror="this.style.display='none';document.getElementById('photoPlaceholder').style.display='grid'">
     <div class="photo-placeholder" id="photoPlaceholder">SP</div>
-    <img id="profilePhoto" class="profile-photo" alt="Sheshram Prajapati profile photo" style="display:none">
-    <label class="photo-edit" for="photoInput" title="Upload profile picture">✎</label>
-    <input id="photoInput" type="file" accept="image/*" hidden>
    </div>
-   <div class="photo-help">Click ✎ to add your profile picture</div>
+   <div class="photo-help">Add your photo as <strong>profile.jpg</strong> in the GitHub repository</div>
    <h3>Sheshram Prajapati</h3>
    <p class="profile-role">Senior MIS Executive</p>
    <div class="stats">
     <div class="stat"><strong>8+</strong><span>Years Experience</span></div>
     <div class="stat"><strong>4+</strong><span>Core Tools</span></div>
-    <div class="stat"><strong>∞</strong><span>Data Insights</span></div>
+    <div class="stat"><strong>Infinite </strong><span>Data Insights</span></div>
    </div>
   </div>
  </div>
@@ -273,30 +272,7 @@ footer{background:var(--navy);color:#cbd5e1;text-align:center;padding:32px 20px}
 <footer><strong>Sheshram Prajapati</strong><p>MIS & Business Reporting | Data Analytics | Advanced Excel | SQL | Power BI</p><p>© 2026 Sheshram Prajapati. All Rights Reserved.</p></footer>
 
 <script>
-const input=document.getElementById("photoInput");
-const photo=document.getElementById("profilePhoto");
-const placeholder=document.getElementById("photoPlaceholder");
-
-input.addEventListener("change",function(){
-  const file=this.files[0];
-  if(!file)return;
-  if(!file.type.startsWith("image/"))return;
-  const reader=new FileReader();
-  reader.onload=function(e){
-    photo.src=e.target.result;
-    photo.style.display="block";
-    placeholder.style.display="none";
-    localStorage.setItem("portfolioProfilePhoto",e.target.result);
-  };
-  reader.readAsDataURL(file);
-});
-
-const saved=localStorage.getItem("portfolioProfilePhoto");
-if(saved){
-  photo.src=saved;
-  photo.style.display="block";
-  placeholder.style.display="none";
-}
+/* Profile photo is loaded from profile.jpg in the GitHub repository. */
 </script>
 </body>
 </html>
