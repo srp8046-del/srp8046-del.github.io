@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sheshram Prajapati | MIS Executive & Data Analyst</title>
+
+    <meta name="description"
+          content="Portfolio of Sheshram Prajapati - MIS Executive, Data Analyst, Power BI, SQL and Advanced Excel professional.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f8fc;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.96);
+            border-bottom: 1px solid #e5e7eb;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: 1150px;
+            margin: auto;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            color: #111827;
+        }
+
+        .logo span {
+            color: #2563eb;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 600;
+            color: #4b5563;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #eef4ff, #ffffff);
+        }
+
+        .hero-container {
+            max-width: 1150px;
+            width: 100%;
+            margin: auto;
+            padding: 80px 20px;
+            display: grid;
+            grid-template-columns: 1.4fr 0.8fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #dbeafe;
+            color: #1d4ed8;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            line-height: 1.1;
+            color: #111827;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 span {
+            color: #2563eb;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            font-weight: 500;
+            color: #4b5563;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #6b7280;
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 13px 23px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 14px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 1px solid #cbd5e1;
+            background: white;
+            color: #374151;
+        }
+
+        .btn-outline:hover {
+            border-color: #2563eb;
+            color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        /* HERO CARD */
+        .profile-card {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(15,23,42,0.10);
+            text-align: center;
+            border: 1px solid #e5e7eb;
+        }
+
+        .profile-icon {
+            width: 120px;
+            height: 120px;
+            margin: auto auto 20px;
+            border-radius: 50%;
+            background: #eff6ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 45px;
+            font-weight: 800;
+            color: #2563eb;
+        }
+
+        .profile-card h3 {
+            font-size: 23px;
+            margin-bottom: 5px;
+        }
+
+        .profile-card p {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .profile-stats {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin-top: 25px;
+            gap: 10px;
+        }
+
+        .stat {
+            padding: 15px 5px;
+            background: #f8fafc;
+            border-radius: 10px;
+        }
+
+        .stat strong {
+            display: block;
+            font-size: 22px;
+            color: #2563eb;
+        }
+
+        .stat span {
+            font-size: 11px;
+            color: #6b7280;
+        }
+
+        /* COMMON */
+        section {
+            padding: 90px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #6b7280;
+        }
+
+        /* ABOUT */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text p {
+            color: #6b7280;
+            margin-bottom: 15px;
+        }
+
+        .highlight-box {
+            background: white;
+            border: 1px solid #e5e7eb;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .highlight-box h3 {
+            margin-bottom: 20px;
+        }
+
+        .highlight-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #edf0f4;
+            padding: 13px 0;
+            font-size: 14px;
+        }
+
+        .highlight-item:last-child {
+            border-bottom: none;
+        }
+
+        .highlight-item span:first-child {
+            color: #6b7280;
+        }
+
+        .highlight-item strong {
+            color: #111827;
+        }
+
+        /* SKILLS */
+        #skills {
+            background: white;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #e5e7eb;
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(15,23,42,0.08);
+        }
+
+        .skill-icon {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        .skill-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .skill-card p {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        /* EXPERIENCE */
+        .timeline {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .timeline-item {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-left: 4px solid #2563eb;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(15,23,42,0.05);
+        }
+
+        .timeline-item h3 {
+            font-size: 21px;
+        }
+
+        .timeline-item .company {
+            color: #2563eb;
+            font-weight: 700;
+            margin: 5px 0;
+        }
+
+        .timeline-item .date {
+            color: #9ca3af;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .timeline-item ul {
+            padding-left: 20px;
+            color: #6b7280;
+        }
+
+        /* PROJECTS */
+        #projects {
+            background: white;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 15px;
+            padding: 28px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(15,23,42,0.08);
+        }
+
+        .project-number {
+            color: #2563eb;
+            font-size: 13px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .project-card h3 {
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #6b7280;
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+        }
+
+        .tech span {
+            background: #dbeafe;
+            color: #1d4ed8;
+            padding: 5px 9px;
+            border-radius: 5px;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        /* DASHBOARD */
+        .dashboard-box {
+            background: #111827;
+            color: white;
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .dashboard-box h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .dashboard-box p {
+            color: #cbd5e1;
+            max-width: 650px;
+            margin: auto auto 25px;
+        }
+
+        /* CONTACT */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 15px;
+        }
+
+        .contact-card p {
+            color: #6b7280;
+            margin-bottom: 10px;
+        }
+
+        .contact-link {
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #111827;
+            color: #cbd5e1;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        footer p {
+            font-size: 13px;
+            margin-top: 7px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 850px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid,
+            .project-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 550px) {
+
+            .skills-grid,
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+
+            section {
+                padding: 65px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav-container">
+
+        <div class="logo">
+            SP<span>.</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-container">
+
+        <div>
+
+            <div class="tag">
+                MIS & DATA ANALYTICS PROFESSIONAL
+            </div>
+
+            <h1>
+                Sheshram<br>
+                <span>Prajapati</span>
+            </h1>
+
+            <h2>
+                MIS Executive | Data Analyst
+            </h2>
+
+            <p>
+                Experienced MIS professional specializing in reporting,
+                data analysis, business dashboards and workforce performance.
+                Skilled in Advanced Excel, SQL, Power BI and DAX.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#projects" class="btn btn-primary">
+                    View My Projects
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="profile-card">
+
+            <div class="profile-icon">
+                SP
+            </div>
+
+            <h3>Sheshram Prajapati</h3>
+
+            <p>
+                MIS Executive & Data Analytics Professional
+            </p>
+
+            <div class="profile-stats">
+
+                <div class="stat">
+                    <strong>8+</strong>
+                    <span>Years Experience</span>
+                </div>
+
+                <div class="stat">
+                    <strong>4+</strong>
+                    <span>Core Tools</span>
+                </div>
+
+                <div class="stat">
+                    <strong>∞</strong>
+                    <span>Data Insights</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>About Me</h2>
+            <p>Turning business data into useful insights</p>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+                    I am an MIS professional with more than eight years of
+                    experience in MIS reporting, data analysis, workforce
+                    management and business reporting.
+                </p>
+
+                <p>
+                    My experience includes working with large datasets,
+                    creating automated reports, monitoring KPIs and preparing
+                    business insights for operational teams and stakeholders.
+                </p>
+
+                <p>
+                    I am currently strengthening my Data Analytics skills
+                    with SQL, Power BI, DAX and Python/Pandas.
+                </p>
+
+            </div>
+
+
+            <div class="highlight-box">
+
+                <h3>Professional Focus</h3>
+
+                <div class="highlight-item">
+                    <span>Primary Role</span>
+                    <strong>MIS Executive</strong>
+                </div>
+
+                <div class="highlight-item">
+                    <span>Specialization</span>
+                    <strong>Data Analysis</strong>
+                </div>
+
+                <div class="highlight-item">
+                    <span>Reporting</span>
+                    <strong>MIS & Business Reporting</strong>
+                </div>
+
+                <div class="highlight-item">
+                    <span>Dashboard</span>
+                    <strong>Power BI</strong>
+                </div>
+
+                <div class="highlight-item">
+                    <span>Database</span>
+                    <strong>SQL</strong>
+                </div>
+
+                <div class="highlight-item">
+                    <span>Spreadsheet</span>
+                    <strong>Advanced Excel</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>My Skills</h2>
+            <p>Tools and capabilities I use for reporting and analysis</p>
+        </div>
+
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <div class="skill-icon">📊</div>
+                <h3>Advanced Excel</h3>
+                <p>
+                    Pivot Tables, Power Query, formulas, data cleaning,
+                    reporting and dashboard preparation.
+                </p>
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-icon">🗄️</div>
+                <h3>SQL</h3>
+                <p>
+                    Data extraction, joins, CTEs, aggregation,
+                    filtering and analytical queries.
+                </p>
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-icon">📈</div>
+                <h3>Power BI</h3>
+                <p>
+                    Interactive dashboards, KPI reporting,
+                    data modelling and business visualization.
+                </p>
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-icon">⚙️</div>
+                <h3>DAX</h3>
+                <p>
+                    Measures, calculated logic, aggregations and
+                    analytical calculations in Power BI.
+                </p>
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-icon">🐍</div>
+                <h3>Python / Pandas</h3>
+                <p>
+                    Currently developing skills in Python and Pandas
+                    for data analysis and automation.
+                </p>
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-icon">👥</div>
+                <h3>WFM & Operations</h3>
+                <p>
+                    Workforce reporting, agent performance,
+                    productivity and operational analysis.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+<section id="experience">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Experience</h2>
+            <p>Professional experience in MIS and operations reporting</p>
+        </div>
+
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <h3>Senior MIS Executive</h3>
+
+                <div class="company">
+                    Leeway International
+                </div>
+
+                <div class="date">
+                    MIS & Business Reporting
+                </div>
+
+                <ul>
+                    <li>
+                        Prepared daily, weekly and monthly MIS reports.
+                    </li>
+
+                    <li>
+                        Worked on large datasets and operational performance
+                        analysis.
+                    </li>
+
+                    <li>
+                        Created reports for circle, pincode, service center,
+                        business manager, team and agent levels.
+                    </li>
+
+                    <li>
+                        Analysed KPIs, productivity, sales, conversion,
+                        churn and customer VOC.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <h3>MIS / Reporting Professional</h3>
+
+                <div class="company">
+                    Telecom & BPO Operations
+                </div>
+
+                <div class="date">
+                    Reporting | Data Analysis | WFM
+                </div>
+
+                <ul>
+
+                    <li>
+                        Managed operational reporting for multiple business
+                        processes.
+                    </li>
+
+                    <li>
+                        Worked across DTH, Broadband, Postpaid, Prepaid,
+                        Retention, VAS and Acquisition processes.
+                    </li>
+
+                    <li>
+                        Prepared performance reports and management insights.
+                    </li>
+
+                    <li>
+                        Supported workforce and agent performance reporting.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Featured Projects</h2>
+            <p>Examples of data analysis and reporting projects</p>
+        </div>
+
+
+        <div class="project-grid">
+
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    PROJECT 01
+                </div>
+
+                <h3>DTH Winback Analysis</h3>
+
+                <p>
+                    Analysed allocation, connection, sales, conversion,
+                    payment and churn performance to identify business
+                    trends and performance gaps.
+                </p>
+
+                <div class="tech">
+                    <span>Excel</span>
+                    <span>SQL</span>
+                    <span>Power BI</span>
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    PROJECT 02
+                </div>
+
+                <h3>VAS Performance Dashboard</h3>
+
+                <p>
+                    Created performance reporting covering allocation,
+                    connect, sales, churn, revenue and sales per agent
+                    for operational monitoring.
+                </p>
+
+                <div class="tech">
+                    <span>Power BI</span>
+                    <span>DAX</span>
+                    <span>Excel</span>
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    PROJECT 03
+                </div>
+
+                <h3>Online Acquisition Analysis</h3>
+
+                <p>
+                    Analysed leads, attempts, connects, orders,
+                    activations and L2O/O2A conversion to understand
+                    acquisition funnel performance.
+                </p>
+
+                <div class="tech">
+                    <span>SQL</span>
+                    <span>Excel</span>
+                    <span>Power BI</span>
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    PROJECT 04
+                </div>
+
+                <h3>Agent Performance Analysis</h3>
+
+                <p>
+                    Analysed agent-level productivity, connect rate,
+                    sales performance and operational KPIs.
+                </p>
+
+                <div class="tech">
+                    <span>Excel</span>
+                    <span>WFM</span>
+                    <span>MIS</span>
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    PROJECT 05
+                </div>
+
+                <h3>SQL Data Analysis</h3>
+
+                <p>
+                    Developed SQL queries using joins, CTEs,
+                    ROW_NUMBER, aggregation and date-based analysis
+                    for operational datasets.
+                </p>
+
+                <div class="tech">
+                    <span>PostgreSQL</span>
+                    <span>SQL</span>
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    PROJECT 06
+                </div>
+
+                <h3>MIS Automation</h3>
+
+                <p>
+                    Worked on Excel-based reporting and automation
+                    to reduce manual reporting effort and improve
+                    reporting consistency.
+                </p>
+
+                <div class="tech">
+                    <span>Excel</span>
+                    <span>Power Query</span>
+                    <span>VBA</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- POWER BI -->
+<section>
+
+    <div class="container">
+
+        <div class="dashboard-box">
+
+            <h3>Power BI Dashboard Portfolio</h3>
+
+            <p>
+                Interactive dashboards will be added here to showcase
+                business KPIs, sales trends, conversion, productivity,
+                churn and operational performance.
+            </p>
+
+            <!-- Replace # with your Power BI dashboard link later -->
+
+            <a href="#"
+               class="btn btn-primary"
+               onclick="alert('Power BI dashboard link will be added soon.'); return false;">
+                View Dashboard
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- RESUME -->
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>My Resume</h2>
+
+            <p>
+                Download my latest resume to know more about my
+                professional experience and skills.
+            </p>
+
+            <br>
+
+            <!--
+            IMPORTANT:
+            Later upload your resume PDF to GitHub and name it:
+
+            resume.pdf
+
+            Then change href below to:
+            href="resume.pdf"
+            -->
+
+            <a href="#"
+               class="btn btn-primary"
+               onclick="alert('Resume PDF will be added soon.'); return false;">
+                Download Resume
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Let's Connect</h2>
+
+            <p>
+                Open to opportunities in MIS, Reporting and Data Analytics.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <h3>Contact Information</h3>
+
+                <p>
+                    📧
+                    <a class="contact-link"
+                       href="mailto:srp8046@gmail.com">
+                        srp8046@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    📱
+                    <a class="contact-link"
+                       href="tel:+917565008895">
+                        +91 7565008895
+                    </a>
+                </p>
+
+                <p>
+                    📍 Delhi, India
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>Professional Profile</h3>
+
+                <p>
+                    You can also connect with me on LinkedIn.
+                </p>
+
+                <!-- Replace this with your actual LinkedIn URL -->
+
+                <a class="btn btn-primary"
+                   href="https://www.linkedin.com/in/sheshram-prajapati"
+                   target="_blank">
+                    LinkedIn Profile
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <strong>Sheshram Prajapati</strong>
+
+    <p>
+        MIS Executive | Data Analyst | Power BI | SQL | Advanced Excel
+    </p>
+
+    <p>
+        © 2026 Sheshram Prajapati. All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>
